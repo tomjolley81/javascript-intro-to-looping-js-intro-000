@@ -1,3 +1,4 @@
+var j = 0
 function forLoop(array) {
   for (let i = 0; i < 25; i++) {
     if (i===1){
@@ -13,4 +14,16 @@ function whileLoop(n) {
     console.log(--n)
   }
   return "done"
+}
+function doWhileLoop(array) {
+  do {
+    function incrementVariable(){
+      j = j + 1
+    }
+    
+  }while (j < array.length && array.length > 0) {
+    array.pop()
+    incrementVariable()
+  }
+  return array
 }
